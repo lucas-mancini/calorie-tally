@@ -15,12 +15,12 @@ Front End: (see client folder)
   * [Grunt](http://gruntjs.com/)
 
 Back End: (see server folder)
-  * Node JS
-  * Express
-  * Other libraries: mocha, supertest, jsonwebtoken, bcrypt
+  * [Node JS](https://nodejs.org/)
+  * [Express](http://expressjs.com/)
+  * Other libraries: [mocha](http://mochajs.org/), [supertest](https://www.npmjs.com/package/supertest), [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken), [bcrypt](https://www.npmjs.com/package/bcrypt)
 
 Database:
-  * MongoDB and Mongoose
+  * [MongoDB](https://www.mongodb.org/) and [Mongoose](http://mongoosejs.com/)
 
 Yeoman generator used for Front End: https://github.com/leszekhanusz/generator-knockout-bootstrap/tree/master/app/templates
 
