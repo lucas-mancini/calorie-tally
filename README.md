@@ -7,12 +7,12 @@ Sample calorie counter app, Node.js backend and Single Page Application frontend
 ## Technology stack
 
 Front End: (see client folder)
-  * Jade templating language
-  * Bootstrap
-  * Sammy
-  * Knockout.js
-  * jQuery
-  * Grunt
+  * [Jade templating language](http://jade-lang.com/)
+  * [Bootstrap](http://getbootstrap.com/)
+  * [Sammy](http://sammyjs.org/)
+  * [Knockout.js](http://knockoutjs.com/)
+  * [jQuery](https://jquery.com/)
+  * [Grunt](http://gruntjs.com/)
 
 Back End: (see server folder)
   * Node JS
