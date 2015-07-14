@@ -1,5 +1,9 @@
 - Calorie Tally -
 
+Sample calorie counter app, Node.js backend and Single Page Application frontend using Bootstrap and Knockout.
+
+[ADD SCREENSHOT]
+
 ## Technology stack
 
 Front End: (see client folder)
@@ -44,19 +48,4 @@ Client:
 * Regarding authorization, it is worth mentioning two things:
   * a) Some routes are only allowed for admin users, such as 'GET /users' (to get all users information), 'GET /meals' (to get all meals) and 'DELETE /users', to remove users.
   * b) On other routes, mainly the ones that update and create new content, if the user is not admin, it will only be allowed to create/update his own records.
-
-## Requirements
-
-Write an application for the input of calories:
-
-* User must be able to create an account and log in.
-* When logged in, user can see a list of his meals and calories (user enters calories manually, no auto calculations!), also he should be able to edit and delete.
-* Implement at least two roles with different permission levels (ie: a regular user would only be able to CRUD on his owned records, a user manager would be able to CRUD users, an admin would be able to CRUD on all records and users, etc.).
-* Each entry has a date, time, text, and num of calories.
-* Filter by dates from-to, time from-to (e.g. how much calories have I had for lunch each day in the last month, if lunch is between 12 and 15h).
-* User setting – Expected number of calories per day.
-* When displayed, it goes green if the total for that day is less than expected number of calories per day, otherwise goes red.
-* All actions need to be done client side using AJAX, refreshing the page is not acceptable. (If a mobile app, disregard this).
-* REST API. Make it possible to perform all user actions via the API, including authentication (If a mobile application and you don’t know how to create your own backend you can use Parse.com, Firebase.com or similar services to create the API).
-* In any case you should be able to explain how a REST API works and demonstrate that by creating functional tests that use the REST Layer directly.
 
