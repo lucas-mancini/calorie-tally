@@ -30,19 +30,19 @@ Yeoman generator used for Front End: (https://github.com/leszekhanusz/generator-
 
 ### Server:
 
-1. Install MongoDB, and use the mongo shell to run 'use calorie-tally-db' so a new database is created. The connection URI used from the app is: 'mongodb://localhost:27017/calorie-tally-db'.
-2. On the server folder, run 'node server.js' (you can use nodemon as well), to start the REST API. The API can be accesed on http://localhost:8080/api.
+1. Install MongoDB, and use the mongo shell to run `use calorie-tally-db` so a new database is created. The connection URI used from the app is: `mongodb://localhost:27017/calorie-tally-db`.
+2. On the server folder, run `node server.js` (you can use nodemon as well), to start the REST API. The API can be accesed on http://localhost:8080/api.
 
 ### Client:
 
-1. Install all dependencies using 'npm install' and 'bower install'.
-2. Use 'grunt' to build app, and 'grunt serve' to serve it and monitor changes at http://localhost:9000.
+1. Install all dependencies using `npm install` and `bower install`.
+2. Use `grunt` to build app, and `grunt serve` to serve it and monitor changes at http://localhost:9000.
 
 ## How to run tests
 
-1. Install mocha: 'npm install -g mocha'.
-2. Use mongo shell to run 'use calorie-tally-test-db', to create a database for testing purposes.
-2. Execute run_tests.sh, it will spawn a separate instance of the application under a different port, and using the test database, and then, it runs the 'mocha' command, which will run all files under test/*.js. 
+1. Install mocha: `npm install -g mocha`.
+2. Use mongo shell to run `use calorie-tally-test-db`, to create a database for testing purposes.
+2. Execute run_tests.sh, it will spawn a separate instance of the application under a different port, and using the test database, and then, it runs the `mocha` command, which will run all files under test/*.js. 
 
 ## Authentication and Authorization
 
