@@ -1,4 +1,4 @@
-- Calorie Tally -
+# Calorie Tally
 
 Sample calorie counter app, Node.js backend and Single Page Application frontend using Bootstrap and Knockout.
 
@@ -22,15 +22,19 @@ Back End: (see server folder)
 Database:
   * MongoDB and Mongoose
 
+Yeoman generator used for Front End: (https://github.com/leszekhanusz/generator-knockout-bootstrap/tree/master/app/templates)
+
 ## How to run app
 
 0. Clone git repository.
 
-Server:
+### Server:
+
 1. Install MongoDB, and use the mongo shell to run 'use calorie-tally-db' so a new database is created. The connection URI used from the app is: 'mongodb://localhost:27017/calorie-tally-db'.
 2. On the server folder, run 'node server.js' (you can use nodemon as well), to start the REST API. The API can be accesed on http://localhost:8080/api.
 
-Client:
+### Client:
+
 1. Install all dependencies using 'npm install' and 'bower install'.
 2. Use 'grunt' to build app, and 'grunt serve' to serve it and monitor changes at http://localhost:9000.
 
