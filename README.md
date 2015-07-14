@@ -50,6 +50,6 @@ Yeoman generator used for Front End: https://github.com/leszekhanusz/generator-k
 * A JSON Web Token authentication mechanism was implemented. The user then presents his/her credentials (user name and password), so the backend validates this information with the credentials stored on the DB. If this step is successful, a token is generated, and returned to the user, who will securely store it and use it on every request perform, by passing the token on the header of the HTTP request. 
 
 * Regarding authorization, it is worth mentioning two things:
-  * a) Some routes are only allowed for admin users, such as 'GET /users' (to get all users information), 'GET /meals' (to get all meals) and 'DELETE /users', to remove users.
+  * a) Some routes are only allowed for admin users, such as `GET /users` (to get all users information), `GET /meals` (to get all meals) and `DELETE /users`, to remove users.
   * b) On other routes, mainly the ones that update and create new content, if the user is not admin, it will only be allowed to create/update his own records.
 
