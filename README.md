@@ -22,7 +22,7 @@ Back End: (see server folder)
 Database:
   * MongoDB and Mongoose
 
-Yeoman generator used for Front End: (https://github.com/leszekhanusz/generator-knockout-bootstrap/tree/master/app/templates)
+Yeoman generator used for Front End: https://github.com/leszekhanusz/generator-knockout-bootstrap/tree/master/app/templates
 
 ## How to run app
 
