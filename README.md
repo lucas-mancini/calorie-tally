@@ -1,6 +1,6 @@
 # Calorie Tally
 
-Sample calorie counter app, Node.js backend and Single Page Application frontend using Bootstrap and Knockout.
+Sample calorie counter app, Node.js backend and Single Page Application frontend using Bootstrap and Knockout. The application was developed for learning purposes and to show how to use MongoDB in a Node.js backend, via Mongoose, and how to design a clear and predictable RESTful API.
 
 [ADD SCREENSHOT]
 
