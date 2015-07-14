@@ -1,0 +1,12 @@
+extends partials/_bootstrap_layout.jade
+
+block maincontainer
+  .container
+    #home(style='display:none;', data-bind='visible: sammy.chosenFolderId()===\'home\'')
+      include partials/_home.jade
+    #all-meals(style='display:none;', data-bind='visible: sammy.chosenFolderId()===\'all-meals\'')
+      include partials/_all-meals.jade 
+    #users(style='display:none;', data-bind='visible: sammy.chosenFolderId()===\'users\'')
+      include partials/_users.jade
+    #about(style='display:none;', data-bind='visible: sammy.chosenFolderId()===\'about\'')
+      include partials/_about.jade

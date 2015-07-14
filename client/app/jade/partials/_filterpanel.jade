@@ -1,0 +1,23 @@
+.row
+  .col-md-10.col-md-offset-1
+    .panel.panel-success
+      .panel-heading Meal filters
+      .panel-body
+        .col-md-3.meal--param-filter 
+          span From date
+          span
+            input(id='filter-date-from-input', type='date', step='60', class='input-md' value='2015-01-01')
+        .col-md-3.meal--param-filter
+          span To date
+          span
+            input(id='filter-date-to-input', type='date', step='60', class='input-md' value='2015-12-31')
+        .col-md-2.meal--param-filter
+          span From time
+          span
+            input(id='filter-time-from-input', type='time', step='60', class='input-md' value='00:00')
+        .col-md-2.meal--param-filter
+          span To time
+          span
+            input(id='filter-time-to-input', type='time', step='60', class='input-md' value='23:59')
+        .col-md-1 
+          a.btn.btn-primary.meal--btn-filter(data-bind='click: myMeals.filterMyMeals') Apply filter

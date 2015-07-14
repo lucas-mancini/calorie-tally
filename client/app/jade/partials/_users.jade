@@ -1,0 +1,12 @@
+.row
+  .col-md-6.col-md-offset-3
+      table.table.table-striped.table-hover.table-condensed.ct-table(id='all-users')
+        thead
+            th Name
+            th Expected calories per day
+            th Admin
+        tbody(data-bind='foreach: allUsers.allUsers')
+            tr
+                td(data-bind='text: userName')
+                td(data-bind='text: expectedCaloriesPerDay')
+                td(data-bind='text: adminDisplay')

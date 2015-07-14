@@ -1,0 +1,30 @@
+{
+  "name": "calorie-tally-server",
+  "version": "0.0.1",
+  "description": "REST API (backend) with authentication for the Calorie Tally application",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.toptal.com:Lucas-Mancini/lucas-mancini.git"
+  },
+  "keywords": [
+    "toptal",
+    "calorietally"
+  ],
+  "author": "Lucas Mancini",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "morgan": "~1.6.0",
+    "body-parser": "~1.13.1",
+    "express": "~4.13.0",
+    "jsonwebtoken": "~5.0.2",
+    "mongoose": "~4.0.6",
+    "bcrypt": "~0.8.3",
+    "mocha": "~2.2.5",
+    "supertest": "~1.0.1"
+  }
+}

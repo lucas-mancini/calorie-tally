@@ -1,0 +1,12 @@
+ul.nav.navbar-nav.navbar-right
+  li(data-bind="css: { active: sammy.chosenFolderId()==='home'}")
+    a(href='#' data-bind='click: myMeals.loadMyMeals()') My meals
+  li(data-bind="css: { active: sammy.chosenFolderId()==='all-meals'}, visible: user.admin")
+    a(href='#all-meals', data-bind='click: allMeals.loadAllMeals(user.admin())') All meals
+  li(data-bind="css: { active: sammy.chosenFolderId()==='users'}, visible: user.admin")
+    a(href='#users', data-bind='click: allUsers.loadAllUsers(user.admin())') Users
+  li(data-bind="css: { active: sammy.chosenFolderId()==='about'}")
+    a(href='#about') About
+  li
+    button.btn.btn-default.navbar-btn(type='button', data-bind="click: login.logout") Logout
+ 

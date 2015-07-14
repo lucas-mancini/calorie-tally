@@ -1,0 +1,37 @@
+.row
+  .col-md-6.col-md-offset-2
+    h1.user--name(data-bind='text: user.userName') User 
+  .col-md-3
+    .user--expected-calories
+        span.user--expected-calories-value(data-bind='text: user.expectedCaloriesPerDay, style: { color: myMeals.totalCaloriesToday() > user.expectedCaloriesPerDay() ? "red" : "green" }') 0 
+        span.user--expected-calories-unit  kcal
+        a.user--change-settings.btn.btn-primary(data-bind='click: user.changeUserSettings') Change
+    
+.row
+  .col-md-6.col-md-offset-2
+    .user--calories-today
+        span Calories today: 
+        span(data-bind='text: myMeals.totalCaloriesToday') 0
+        span  kcal
+  .col-md-3
+    a.btn.btn-success.btn-lg.meal--btn-add(data-bind='click: myMeals.addMeal') Add meal
+
+include _filterpanel.jade
+
+.row
+  .col-md-10.col-md-offset-1
+      table.table.table-striped.table-hover.table-condensed.ct-table(id='my-meals')
+        thead
+            th Description
+            th Number of calories 
+            th Date and time
+            th Actions
+        tbody(data-bind='foreach: myMeals.myMeals')
+            tr
+                td(data-bind='text: description')
+                td(data-bind='text: numberOfCalories')
+                td(data-bind='text: formattedDateAndTime')
+                td
+                    a.meal--btn-action.btn.btn-primary.btn-sm(data-bind='click: $parent.myMeals.editMeal') Edit
+                    a.meal--btn-action.btn.btn-danger.btn-sm(data-bind='click: $parent.myMeals.removeMeal') Delete
+

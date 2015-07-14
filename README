@@ -1,0 +1,62 @@
+- Calorie Tally -
+
+## Technology stack
+
+Front End: (see client folder)
+  * Jade templating language
+  * Bootstrap
+  * Sammy
+  * Knockout.js
+  * jQuery
+  * Grunt
+
+Back End: (see server folder)
+  * Node JS
+  * Express
+  * Other libraries: mocha, supertest, jsonwebtoken, bcrypt
+
+Database:
+  * MongoDB and Mongoose
+
+## How to run app
+
+0. Clone git repository.
+
+Server:
+1. Install MongoDB, and use the mongo shell to run 'use calorie-tally-db' so a new database is created. The connection URI used from the app is: 'mongodb://localhost:27017/calorie-tally-db'.
+2. On the server folder, run 'node server.js' (you can use nodemon as well), to start the REST API. The API can be accesed on http://localhost:8080/api.
+
+Client:
+1. Install all dependencies using 'npm install' and 'bower install'.
+2. Use 'grunt' to build app, and 'grunt serve' to serve it and monitor changes at http://localhost:9000.
+
+## How to run tests
+
+1. Install mocha: 'npm install -g mocha'.
+2. Use mongo shell to run 'use calorie-tally-test-db', to create a database for testing purposes.
+2. Execute run_tests.sh, it will spawn a separate instance of the application under a different port, and using the test database, and then, it runs the 'mocha' command, which will run all files under test/*.js. 
+
+## Authentication and Authorization
+
+* Hashed passwords are stored on the DB, never in plain text. I am using bcrypt to hash the password with a salt.
+* A JSON Web Token authentication mechanism was implemented. The user then presents his/her credentials (user name and password), so the backend validates this information with the credentials stored on the DB. If this step is successful, a token is generated, and returned to the user, who will securely store it and use it on every request perform, by passing the token on the header of the HTTP request. 
+
+* Regarding authorization, it is worth mentioning two things:
+  * a) Some routes are only allowed for admin users, such as 'GET /users' (to get all users information), 'GET /meals' (to get all meals) and 'DELETE /users', to remove users.
+  * b) On other routes, mainly the ones that update and create new content, if the user is not admin, it will only be allowed to create/update his own records.
+
+## Requirements
+
+Write an application for the input of calories:
+
+* User must be able to create an account and log in.
+* When logged in, user can see a list of his meals and calories (user enters calories manually, no auto calculations!), also he should be able to edit and delete.
+* Implement at least two roles with different permission levels (ie: a regular user would only be able to CRUD on his owned records, a user manager would be able to CRUD users, an admin would be able to CRUD on all records and users, etc.).
+* Each entry has a date, time, text, and num of calories.
+* Filter by dates from-to, time from-to (e.g. how much calories have I had for lunch each day in the last month, if lunch is between 12 and 15h).
+* User setting – Expected number of calories per day.
+* When displayed, it goes green if the total for that day is less than expected number of calories per day, otherwise goes red.
+* All actions need to be done client side using AJAX, refreshing the page is not acceptable. (If a mobile app, disregard this).
+* REST API. Make it possible to perform all user actions via the API, including authentication (If a mobile application and you don’t know how to create your own backend you can use Parse.com, Firebase.com or similar services to create the API).
+* In any case you should be able to explain how a REST API works and demonstrate that by creating functional tests that use the REST Layer directly.
+

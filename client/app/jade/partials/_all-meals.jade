@@ -1,0 +1,18 @@
+.row
+  .col-md-10.col-md-offset-1
+      table.table.table-striped.table-hover.table-condensed.ct-table(id='all-meals')
+        thead
+            th User
+            th Description
+            th Number of calories 
+            th Date and time
+            th Actions
+        tbody(data-bind='foreach: allMeals.allMeals')
+            tr
+                td(data-bind='text: creator')
+                td(data-bind='text: description')
+                td(data-bind='text: numberOfCalories')
+                td(data-bind='text: formattedDateAndTime')
+                td
+                    a.meal--btn-action.btn.btn-primary.btn-sm(data-bind='click: $parent.allMeals.editMeal') Edit
+                    a.meal--btn-action.btn.btn-danger.btn-sm(data-bind='click: $parent.allMeals.removeMeal') Delete

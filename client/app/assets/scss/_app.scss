@@ -1,0 +1,74 @@
+/* Space out content a bit */
+body {
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+/* navigation bar */
+
+.navbar-header {
+    .navbar-btn {
+        margin-left: 10px;
+    }
+
+    .navbar-brand-image {
+        width: 40px;
+        height: 40px; 
+        margin-top: -10px;
+    }
+}
+
+/* user */
+.user--name {
+    color: #444;
+}
+
+.user--expected-calories {
+    margin-top: 15px;
+    color: #666;
+}
+.user--expected-calories-value {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: green;
+}
+
+.user--expected-calories-unit {
+    font-size: 1.5em;
+}
+
+.user--calories-today {
+    font-size: 1.3em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.user--change-settings {
+    position: relative;
+    left: 12px;
+    top: -10px;
+}
+
+/* tables */
+.ct-table {
+    margin-top: 35px;
+}
+
+/* meals */
+.meal--btn-action {
+    margin: 2px 4px;
+    width: 60px;
+}
+
+.meal--btn-add {
+    margin-bottom: 25px;
+}
+
+.meal--btn-filter {
+    position: relative;
+    top: 10px;
+}
+
+.meal--param-filter {
+    margin: 3px;
+}

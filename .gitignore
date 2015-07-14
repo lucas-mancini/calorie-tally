@@ -1,0 +1,5 @@
+server/node_modules
+server/test/test.log
+client/node_modules
+client/.sass-cache
+client/app/bower_components
