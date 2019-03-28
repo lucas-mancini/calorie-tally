@@ -18,7 +18,7 @@
   "author": "Lucas Mancini",
   "license": "BSD-2-Clause",
   "dependencies": {
-    "morgan": "~1.6.0",
+    "morgan": ">=1.9.1",
     "body-parser": "~1.13.1",
     "express": "~4.13.0",
     "jsonwebtoken": "~5.0.2",
